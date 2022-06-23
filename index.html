@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <h1 class="title">Quiz Game (Tema: Tecnología)</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <details>
+            <summary>
+              <h2 class="subtitle">Nivel 1: Ofimática</h2>
+            </summary>
+            <div id="game1" class="game text">
+              <div id="head-game1" class="head-game">
+                <span id="question1">Pregunta</span><br />
+                <img
+                  src="/assets/images/software.webp"
+                  alt=""
+                  id="img-question1"
+                  class="img-question"
+                />
+              </div>
+              <div class="options" id="option-1" onclick="selectionResponse1(0)">
+                Opción 1
+              </div>
+              <div class="options" id="option-2" onclick="selectionResponse1(1)">
+                Opción 2
+              </div>
+              <div class="options" id="option-3" onclick="selectionResponse1(2)">
+                Opción 3
+              </div>
+              <div class="options" id="option-4" onclick="selectionResponse1(3)">
+                Opción 4
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <h2 class="subtitle">Nivel 2: Informática</h2>
+            </summary>
+            <div id="game2" class="game text">
+              <div id="head-game2" class="head-game">
+                <span id="question2">Pregunta</span><br />
+                <img
+                  src="/assets/images/software.webp"
+                  alt=""
+                  id="img-question2"
+                  class="img-question"
+                />
+              </div>
+              <div class="options" id="option2-1" onclick="selectionResponse2(0)">
+                Opción 1
+              </div>
+              <div class="options" id="option2-2" onclick="selectionResponse2(1)">
+                Opción 2
+              </div>
+              <div class="options" id="option2-3" onclick="selectionResponse2(2)">
+                Opción 3
+              </div>
+              <div class="options" id="option2-4" onclick="selectionResponse2(3)">
+                Opción 4
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <h2 class="subtitle">Nivel 3: Programación</h2>
+            </summary>
+            <div id="game3" class="game text">
+              <div id="head-game3" class="head-game">
+                <span id="question3">Pregunta</span><br />
+                <img
+                  src="/assets/images/software.webp"
+                  alt=""
+                  id="img-question3"
+                  class="img-question"
+                />
+              </div>
+              <div class="options" id="option3-1" onclick="selectionResponse3(0)">
+                Opción 1
+              </div>
+              <div class="options" id="option3-2" onclick="selectionResponse3(1)">
+                Opción 2
+              </div>
+              <div class="options" id="option3-3" onclick="selectionResponse3(2)">
+                Opción 3
+              </div>
+              <div class="options" id="option3-4" onclick="selectionResponse3(3)">
+                Opción 4
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <h2 class="subtitle">Nivel 4: Redes</h2>
+            </summary>
+            <div id="game4" class="game text">
+              <div id="head-game4" class="head-game">
+                <span id="question4">Pregunta</span><br />
+                <img
+                  src="/assets/images/software.webp"
+                  alt=""
+                  id="img-question4"
+                  class="img-question"
+                />
+              </div>
+              <div class="options" id="option4-1" onclick="selectionResponse4(0)">
+                Opción 1
+              </div>
+              <div class="options" id="option4-2" onclick="selectionResponse4(1)">
+                Opción 2
+              </div>
+              <div class="options" id="option4-3" onclick="selectionResponse4(2)">
+                Opción 3
+              </div>
+              <div class="options" id="option4-4" onclick="selectionResponse4(3)">
+                Opción 4
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <h2 class="subtitle">Nivel 5: Ciberseguridad</h2>
+            </summary>
+            <div id="game5" class="game text">
+              <div id="head-game5" class="head-game">
+                <span id="question5">Pregunta</span><br />
+                <img
+                  src="/assets/images/software.webp"
+                  alt=""
+                  id="img-question5"
+                  class="img-question"
+                />
+              </div>
+              <div class="options" id="option5-1" onclick="selectionResponse5(0)">
+                Opción 1
+              </div>
+              <div class="options" id="option5-2" onclick="selectionResponse5(1)">
+                Opción 2
+              </div>
+              <div class="options" id="option5-3" onclick="selectionResponse5(2)">
+                Opción 3
+              </div>
+              <div class="options" id="option5-4" onclick="selectionResponse5(3)">
+                Opción 4
+              </div>
+            </div>
+          </details>
+        </div>
+        <aside class="col-md-4">Aside</aside>
+      </div>
+      <div class="row">
+        <footer class="col-12">
+          Sitio web desarrollado por
+          <a
+            href="https://scorpioncallejas.github.io"
+            class="link"
+            target="_blank"
+            >Raul Callejas</a
+          >
+        </footer>
+      </div>
+    </div>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/baseQuestion.js"></script>
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
